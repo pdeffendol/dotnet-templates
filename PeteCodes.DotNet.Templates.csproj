@@ -15,6 +15,11 @@
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
     <NoWarn>$(NoWarn);NU5128</NoWarn>
+
+    <!-- GitHub NuGet settings -->
+    <PackageProjectUrl>https://github.com/pdeffendol/dotnet-templates</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/pdeffendol/dotnet-templates</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
