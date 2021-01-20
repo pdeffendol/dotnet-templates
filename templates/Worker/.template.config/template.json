@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Pete Deffendol",
+    "classifications": [ "Worker", "Serilog" ],
+    "name": "Worker Service with Serilog",
+    "identity": "PeteCodes.DotNet.Templates.Worker",
+    "shortName": "petecodes-worker",
+    "tags": {
+        "type" : "project",
+        "language": "C#"
+    },
+    "sourceName": "PeteCodes.DotNet.Templates.Worker",
+    "preferNameDirectory" : true
+}
