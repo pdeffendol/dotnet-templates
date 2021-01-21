@@ -16,6 +16,8 @@ env:
   GITHUB_FEED: https://nuget.pkg.github.com/pdeffendol/index.json
   GITHUB_USER: pdeffendol
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NUGET_FEED: https://api.nuget.org/v3/index.json
+  NUGET_KEY: ${{ secrets.NUGET_KEY }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -64,3 +66,5 @@ jobs:
           dotnet pack -v normal -c Release -p:PackageVersion=$VERSION -o nupkg $PROJECT_NAME.*proj
       - name: Push to GitHub Feed
         run: dotnet nuget push ./nupkg/*.nupkg --source $GITHUB_FEED --api-key $GITHUB_TOKEN --skip-duplicate --no-symbols true
+      - name: Push to NuGet Feed
+        run: dotnet nuget push ./nupkg/*.nupkg --source $NUGET_FEED --skip-duplicate --api-key $NUGET_KEY
