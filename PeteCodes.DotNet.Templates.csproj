@@ -8,6 +8,7 @@
     <Authors>Pete Deffendol</Authors>
     <Description>Templates to use with `dotnet new`</Description>
     <PackageTags>dotnet-new;templates</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
     <TargetFramework>net5.0</TargetFramework>
 
